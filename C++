@@ -1,0 +1,47 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+  CALCULADORA PIRATA
+  AUTOR: JUAN CAMILO GALVIS
+  FECHA: MAYO 24 2022
+*/
+
+//DEFINICION DE VARIABLES//
+
+float N1, N2, PERIMETRO, AREA;
+int PER;
+int main() {
+  printf("\n\n\t\t\tFIGURA GEOMETRICA QUE DESEA CALCULAR\n\n\t1.cuadrado\n\t2.Pentágono");
+printf ("\n\t3.rectángulo\n\t4.Romboide\n\t5.SALIR");
+  printf("\n\nDIGITA TU OPCION:");
+  scanf("%d", &PER);
+
+  printf("\nDIGITE EL VALOR DE LA BASE ...\n? ");
+ scanf("%f",&N1);
+printf("\nDIGITE EL VALOR DE LA ALTURA ...\n? ");
+ scanf("%f",&N2);
+
+  switch(PER){ 
+    
+     case 1:PERIMETRO=(N1+N2)*2;
+            AREA=N1*N2;
+     break;
+     case 2:PERIMETRO=N1*5;
+            AREA=(N1*N2*5)/2;
+     break;
+     case 3:PERIMETRO=(N1+N2)*2;
+            AREA=N1*N2;
+     break;
+     case 4:PERIMETRO=(N1+N2)*2;
+            AREA=N1*N2;
+     break;
+     case 5: printf("\n\nHASTA LUEGO :D" );
+     break;
+    }
+  
+   printf("\n\nPERIMETRO: %10.2f",PERIMETRO);
+  printf("\n\n\nAREA: %10.2f",AREA);
+  
+  }
